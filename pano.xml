@@ -364,7 +364,7 @@
     <control contextfullscreen="1" dblclickfullscreen="0" contextprojections="0" invertcontrol="1" simulatemass="1" lockedkeyboard="0" lockedwheel="0" lockedmouse="0" sensitivity="8" lockedkeyboardzoom="0" invertwheel="0" contextvr="1" rubberband="0" speedwheel="1" hideabout="1" zoomcentercursor="1"/>
   </panorama>
   <masternode>
-    <userdata author="" copyright="" tags="" comment="55A" title="창원 명곡 신혼희망타운" description="102동 1003호"/>
+    <userdata author="" copyright="" tags="" comment="" title="창원 명곡 신혼희망타운" description="55A"/>
     <animationsequences>
       <sequence title="Animation01"/>
     </animationsequences>

@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.8/20986
 // Filename: ????VR-SKIN - ???????? 55.ggsk
-// Generated 2025-04-07T14:32:17
+// Generated 2025-04-07T14:46:57
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_aptInfo', 2, false, { ignoreInState: 0  });
@@ -7613,7 +7613,8 @@ function pano2vrSkin(player,base) {
 		els.setAttribute('style',hs);
 		me.__19.ggUpdateText=function() {
 			var params = [];
-			var hs = player._("\uc21c\ucc9c \ud2b8\ub9ac\ub9c8\uc81c", params);
+			params.push(String(player._(player.getNodeUserdata('_master').title)));
+			var hs = player._("%1", params);
 			if (hs!=this.ggText) {
 				this.ggText=hs;
 				this.ggTextDiv.innerHTML=hs;
@@ -7621,6 +7622,9 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me.__19.ggUpdateText();
+		player.addListener('changenode', function() {
+			me.__19.ggUpdateText();
+		});
 		el.appendChild(els);
 		me.__19.ggIsActive=function() {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
@@ -8933,7 +8937,8 @@ function pano2vrSkin(player,base) {
 		els.setAttribute('style',hs);
 		me.__10.ggUpdateText=function() {
 			var params = [];
-			var hs = player._("84 TYPE", params);
+			params.push(String(player._(player.getNodeUserdata('_master').description)));
+			var hs = player._("%1 TYPE", params);
 			if (hs!=this.ggText) {
 				this.ggText=hs;
 				this.ggTextDiv.innerHTML=hs;
@@ -8941,6 +8946,9 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me.__10.ggUpdateText();
+		player.addListener('changenode', function() {
+			me.__10.ggUpdateText();
+		});
 		el.appendChild(els);
 		me.__10.ggIsActive=function() {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
@@ -9937,7 +9945,8 @@ function pano2vrSkin(player,base) {
 		els.setAttribute('style',hs);
 		me._pc10.ggUpdateText=function() {
 			var params = [];
-			var hs = player._("\uc21c\ucc9c \ud2b8\ub9ac\ub9c8\uc81c", params);
+			params.push(String(player._(player.getNodeUserdata('_master').title)));
+			var hs = player._("%1", params);
 			if (hs!=this.ggText) {
 				this.ggText=hs;
 				this.ggTextDiv.innerHTML=hs;
@@ -9945,6 +9954,9 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._pc10.ggUpdateText();
+		player.addListener('changenode', function() {
+			me._pc10.ggUpdateText();
+		});
 		el.appendChild(els);
 		me._pc10.ggIsActive=function() {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
@@ -10367,7 +10379,7 @@ function pano2vrSkin(player,base) {
 		els.setAttribute('style',hs);
 		me._pcth1.ggUpdateText=function() {
 			var params = [];
-			var hs = player._("70,176.00\u33a1", params);
+			var hs = player._("  \u33a1", params);
 			if (hs!=this.ggText) {
 				this.ggText=hs;
 				this.ggTextDiv.innerHTML=hs;
@@ -10584,7 +10596,7 @@ function pano2vrSkin(player,base) {
 		els.setAttribute('style',hs);
 		me._pcth0.ggUpdateText=function() {
 			var params = [];
-			var hs = player._("263,538.62\u33a1", params);
+			var hs = player._("  \u33a1", params);
 			if (hs!=this.ggText) {
 				this.ggText=hs;
 				this.ggTextDiv.innerHTML=hs;
@@ -11253,7 +11265,8 @@ function pano2vrSkin(player,base) {
 		els.setAttribute('style',hs);
 		me._pc2.ggUpdateText=function() {
 			var params = [];
-			var hs = player._("84 TYPE", params);
+			params.push(String(player._(player.getNodeUserdata('_master').description)));
+			var hs = player._("%1 TYPE", params);
 			if (hs!=this.ggText) {
 				this.ggText=hs;
 				this.ggTextDiv.innerHTML=hs;
@@ -11261,6 +11274,9 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._pc2.ggUpdateText();
+		player.addListener('changenode', function() {
+			me._pc2.ggUpdateText();
+		});
 		el.appendChild(els);
 		me._pc2.ggIsActive=function() {
 			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
